@@ -24,10 +24,11 @@ class ActivitylogRelationManager extends RelationManager
             ->headline();
     }
 
-    public function form(Form $form): Form
+    public function form(Schema $schema): Schema
     {
-        return ActivitylogResource::form($form);
+        return ActivitylogResource::form($schema);
     }
+
 
     public function table(Table $table): Table
     {
